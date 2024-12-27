@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قسم تكنولوجيا الغزل والنسيج</title>
+    <style>
+      /* إعدادات الصفحة */
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #fdfbfb;
+        color: black;
+        line-height: 1.6;
+      }
+
+      /* قسم الصورة والعنوان */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vmin;
+        background: url("غزل.jpg") no-repeat center center / cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 40px;
+        border-radius: 10px;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      /* أنيميشن*/
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ناف*/
+      .navbar {
+        background-image: linear-gradient(
+          to left,
+          rgb(31, 30, 30),
+          #4e4b4b,
+          rgb(160, 157, 157),
+          #888785,
+          #888785,
+          #272726
+        );
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin: 0 15px;
+      }
+
+      .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: rgb(26, 27, 27);
+      }
+
+      /* الأقسام */
+      .section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: justify;
+        background: #838282;
+        border: 1px solid #8d8888;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* العناوين */
+      .section h2 {
+        text-align: center;
+        color: #050505;
+        margin-bottom: 20px;
+        font-size: 29px;
+      }
+      p {
+        font-size: 26px;
+      }
+      .section ul {
+        font-size: 23px;
+      }
+
+      /* الفوتر */
+      footer {
+        background: #333;
+        color: #e0e0e0;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>قسم تكنولوجيا الغزل والنسيج</h1>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">عن القسم</a></li>
+        <li><a href="#system">نظام الدراسة</a></li>
+        <li><a href="#materials">مواد الدراسة</a></li>
+        <li><a href="#fields">مجالات العمل</a></li>
+      </ul>
+    </nav>
+
+    <!-- عن القسم -->
+    <section id="about" class="section">
+      <h2>عن القسم</h2>
+      <p>
+        يعد قسم تكنولوجيا الغزل والنسيج أحد الأقسام الرئيسية في كلية تكنولوجيا
+        الصناعة والطاقة بجامعة برج العرب التكنولوجية. يهدف إلى تأهيل الطلاب
+        بالمعرفة والمهارات اللازمة للعمل في صناعة الغزل والنسيج مع التركيز على
+        تشغيل وصيانة ماكينات الغزل والنسيج والتقنيات الحديثة المستخدمة في هذا
+        المجال.
+      </p>
+    </section>
+
+    <!-- نظام الدراسة -->
+    <section id="system" class="section">
+      <h2>نظام الدراسة</h2>
+      <p>
+        تتبع الجامعة نظامًا دراسيًا مرنًا يُعرف بنظام "2+2"، حيث يمكن للطالب
+        الحصول على دبلوم مهني فوق المتوسط في التكنولوجيا بعد إكمال عامين من
+        الدراسة.
+      </p>
+      <p>
+        وفي حال رغبته في استكمال الدراسة، يمكنه متابعة عامين إضافيين للحصول على
+        درجة البكالوريوس المهني في التكنولوجيا، بشرط تحقيق معدل لا يقل عن 80% في
+        السنتين الأوليين. وإذا لم يحقق هذا المعدل، يُتاح له فرصة قضاء عام تدريبي
+        في إحدى الشركات أو المعامل قبل استئناف الدراسة لنيل درجة البكالوريوس.
+      </p>
+      <p>
+        بالإضافة إلى ذلك، توفر الجامعة برامج للدراسات العليا، بما في ذلك
+        الماجستير والدكتوراه المهنية في التكنولوجيا.
+      </p>
+    </section>
+
+    <!-- مواد الدراسة -->
+    <section id="materials" class="section">
+      <h2>مواد الدراسة</h2>
+      <p><strong>السنة الأولى والثانية:</strong></p>
+      <ul>
+        <li>مبادئ تكنولوجيا الغزل والنسيج</li>
+        <li>أساسيات الكيمياء والفيزياء المتعلقة بالمواد النسيجية</li>
+        <li>مقدمة في تصميم الأقمشة</li>
+        <li>تقنيات الصباغة والتجهيز</li>
+        <li>مهارات الحاسب الآلي وتطبيقاته في الصناعة</li>
+        <li>رياضيات وهندسة تطبيقية</li>
+      </ul>
+      <p><strong>السنة الثالثة والرابعة:</strong></p>
+      <ul>
+        <li>تقنيات متقدمة في الغزل والنسيج</li>
+        <li>إدارة الجودة في الصناعات النسيجية</li>
+        <li>تصميم الأقمشة المتقدمة</li>
+        <li>تكنولوجيا الصباغة والتجهيز المتقدمة</li>
+        <li>إدارة الإنتاج والتخطيط</li>
+      </ul>
+    </section>
+
+    <!-- مجالات العمل -->
+    <section id="fields" class="section">
+      <h2>مجالات العمل</h2>
+      <ul>
+        <li>تشغيل وصيانة ماكينات الغزل والنسيج</li>
+        <li>مراقبة وضمان جودة المنتجات النسيجية</li>
+        <li>تصميم وتطوير الأقمشة والمنتجات النسيجية</li>
+        <li>إدارة خطوط الإنتاج في مصانع الغزل والنسيج</li>
+        <li>العمل في إدارات ضمان الجودة لتحسين المنتجات النسيجية</li>
+        <li>المساهمة في تخطيط الإنتاج وتحليل التكاليف</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2024 جامعة برج العرب التكنولوجية</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>برنامج تكنولوجيا التصنيع الغذائي</title>
+    <style>
+      /* إعدادات الصفحة */
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #fdfbfb;
+        color: black;
+        line-height: 1.6;
+      }
+
+      /* قسم الصورة والعنوان */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vmin;
+        background: url("تصنيع.jpg") no-repeat center center / cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 40px;
+        border-radius: 10px;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      /* أنيميشن */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* شريط التنقل */
+      .navbar {
+        background-image: linear-gradient(
+          to left,
+          rgb(31, 30, 30),
+          #4e4b4b,
+          rgb(160, 157, 157),
+          #888785,
+          #888785,
+          #272726
+        );
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin: 0 15px;
+      }
+
+      .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: rgb(26, 27, 27);
+      }
+
+      /* الأقسام */
+      .section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: justify;
+        background: #838282;
+        border: 1px solid #8d8888;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* العناوين */
+      .section h2 {
+        text-align: center;
+        color: #050505;
+        margin-bottom: 20px;
+        font-size: 29px;
+      }
+      p {
+        font-size: 26px;
+      }
+      .section ul {
+        font-size: 23px;
+      }
+
+      /* الفوتر */
+      footer {
+        background: #333;
+        color: #e0e0e0;
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .navbar ul {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>برنامج تكنولوجيا التصنيع الغذائي</h1>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">عن البرنامج</a></li>
+        <li><a href="#objectives">الأهداف</a></li>
+        <li><a href="#fields">مجالات العمل</a></li>
+        <li><a href="#training">التدريب</a></li>
+        <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
+      </ul>
+    </nav>
+
+    <!-- عن البرنامج -->
+    <section id="about" class="section">
+      <h2>عن البرنامج</h2>
+      <p>
+        برنامج تكنولوجيا التصنيع الغذائي هو مجال متعدد التخصصات يهدف إلى ضمان
+        جودة وسلامة المنتجات الغذائية. يتم التركيز على تصميم ومتابعة وإدارة
+        العمليات التصنيعية، بالإضافة إلى رفع القيمة الغذائية...
+      </p>
+      <p>
+        يتضمن البرنامج أيضًا تعليم الطلاب كيفية التحكم في الإنتاج ومراقبة
+        الجودة، وكيفية التعبئة والتغليف، وسلسلة التوريد، والبحث والتطوير، بهدف
+        توفير منتجات صحية وآمنة.
+      </p>
+      <p>
+        في هذا البرنامج، يتم تدريس أفضل الممارسات في الصناعات الغذائية وفقًا
+        للمعايير الدولية لتحقيق أعلى مستوى من الكفاءة والجودة.
+      </p>
+      <p>
+        النصوص في هذا القسم طويلة جدًا لتلبية طلبك. يمكن إضافة المزيد من النصوص
+        حسب الحاجة.
+      </p>
+    </section>
+
+    <!-- الأهداف -->
+    <section id="objectives" class="section">
+      <h2>الأهداف</h2>
+      <ul>
+        <li>ضمان جودة وسلامة المنتجات الغذائية.</li>
+        <li>الحفاظ على رفع القيمة الغذائية.</li>
+        <li>تصميم ومتابعة وإدارة العمليات التصنيعية.</li>
+        <li>تطبيق المعايير الدولية.</li>
+        <li>تطوير الكفاءات العلمية والعملية للطلاب.</li>
+        <li>التركيز على الابتكار والبحث في تقنيات التصنيع الغذائي.</li>
+      </ul>
+    </section>
+
+    <!-- مجالات العمل -->
+    <section id="fields" class="section">
+      <h2>مجالات العمل</h2>
+      <p>يمكن للخريجين العمل في مجالات متعددة تشمل:</p>
+      <ul>
+        <li>إنتاج الأغذية: إدارة خطوط الإنتاج وتطويرها.</li>
+        <li>تعبئة وتغليف: ضمان جودة المواد المستخدمة.</li>
+        <li>التصميم: ابتكار تقنيات تصنيع غذائي جديدة.</li>
+        <li>التخطيط: تطوير استراتيجيات الإنتاج.</li>
+        <li>مراقبة الجودة والسلامة: الحفاظ على جودة المنتجات.</li>
+        <li>الخدمات اللوجيستية: إدارة سلسلة التوريد.</li>
+        <li>البحث والتطوير: تطوير منتجات غذائية جديدة.</li>
+      </ul>
+    </section>
+
+    <!-- التدريب -->
+    <section id="training" class="section">
+      <h2>التدريب</h2>
+      <p>
+        يتضمن البرنامج تدريبًا ميدانيًا لمدة 6 أسابيع في المصانع، بالإضافة إلى
+        زيارات ميدانية.
+      </p>
+      <p>أماكن التدريب تشمل:</p>
+      <ul>
+        <li>فرج الله</li>
+        <li>مزرعة لمار</li>
+        <li>مصنع برج العرب للزيوت</li>
+        <li>مصنع الإسكندرية للاستخلاص الزيوت النباتية</li>
+        <li>مصنع أبو دنقل المطاحن</li>
+        <li>مصنع الأسماك سمر مون</li>
+      </ul>
+    </section>
+
+    <!-- أعضاء هيئة التدريس -->
+    <section id="faculty" class="section">
+      <h2>أعضاء هيئة التدريس</h2>
+      <ul>
+        <li>د. أميرة درويش، رئيسة القسم.</li>
+        <li>د. وليد زكريا.</li>
+        <li>د. جيهان صابر.</li>
+        <li>د. أريج وحيد.</li>
+        <li>د. أسماء بركات.</li>
+        <li>ب. تامر الزيني، معيد.</li>
+        <li>ب. أحمد خليل، معيد.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2024 جامعة برج العرب التكنولوجية</p>
+    </footer>
+  </body>
+</html>

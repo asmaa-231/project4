@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <style>
+     
+       img{
+        width: 700px;
+        height: 700px;
+        margin: 150px;
+        animation: img 5s;
+       }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          to right,
+          rgb(21, 46, 49),
+          rgb(192, 231, 231),
+          rgb(90, 131, 145)
+        );
+      }
+
+
+      .h1 {
+        animation: int 5s;
+        font-size: 58px;
+        direction: rtl;
+        font-size: 58px;
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        text-align: center;
+        padding: 10px 40px;
+      }
+      .h2 {
+        animation: h2 3s;
+        position: absolute;
+        top: 40%;
+        left: 55%;
+        font-size: 32px;
+        width: 40%;
+        direction: rtl;
+        padding: 10px;
+      }
+
+      @keyframes int {
+        0% {
+          transform: translateX(100%);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+      @keyframes h2 {
+        0% {
+          transform: translateX(90%);
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+      @keyframes img {
+        0% {
+          transform: translateX(-100%);
+          opacity: 1;
+        }
+        50% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+      a {
+        margin-top: 30px;
+        margin-left: 70px;
+        text-decoration: none;
+        font-size: 40px;
+      }
+      a:hover {
+        border-bottom: 10px solid    rgb(17, 63, 78);
+        border-radius: 20px;
+      }
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: black;
+      }
+      .backgroun {
+        animation: bac 3s;
+      }
+      /* كود خاص بأجهزة التابلت (عرض الشاشة أقل من 768 بكسل) */
+@media (max-width: 768px) {
+img{
+  width: 300px;
+  height: 300px;
+  margin-top: 90%;
+  margin-left: 30%;
+}
+
+
+
+  .h1 {
+    font-size: 32px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .h2 {
+    font-size: 32px;
+    top: 20%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  a {
+    font-size: 20px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* كود خاص بالهواتف (عرض الشاشة أقل من 480 بكسل) */
+@media (max-width: 480px) {
+img{
+  width: 200px;
+  height: 200px;
+  margin-left: 25%;
+  margin-top: 150%;
+}
+  .h1 {
+    font-size: 29px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 20px;
+    top: 25%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  a {
+    font-size: 16px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="backgroun">
+      <div class="img">
+        <img src="Picsart_24-12-12_20-30-02-194.png" alt="photo" >
+      </div>
+      <div class="h1">جامعة برج العرب التكنولوجية</div>
+      <div class="h2">
+        استطاعت جامعة برج العرب التكنولوجية في قليل من الوقت اثبات انها الافضل
+        حيث انها تنقسم الي كلية تكنولوجيا الصناعة والطاقة وكلية تكنولوجيا العلوم
+        الصحية,جامعة برج العرب من اهم الجامعات حيث انها تمنح الطالب الخريج
+        بكالوريوس تكنولوجي وتمتاز بمجموعة من الدكاترة المميزين وعلي اعلي مستوى.
+        حيث انها في وقت قليل اثبتت جدارتها وتم الانضمام الي النقابة ويوجد بها
+        اقسام لها فرص عمل ممتازة حيث قام السيد الرئيس عبدالفتاح السيسي بزيارة
+        الجامعة نظرا للمجهود الذي قدمته الطلاب من تفوق وعمل مشروعات متميزة وكل
+        هذا تحت رعاية رئيس جامعة برج العرب التكنولوجية الدكتور:محمد مرسي الجوهري
+        <br><br>
+        <a href="صناعة.html">كلية صناعة وطاقة</a>
+        <a href="علوم.html">كلية علوم صحية</a>
+      </div>
+    </div>
+  </body>
+</html>

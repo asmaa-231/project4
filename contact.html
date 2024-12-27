@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <style>
+       body{ 
+            height: 100%;
+            width: 100%;
+            background-image:linear-gradient(to right,rgb(128, 151, 115),rgb(236, 243, 238),rgb(66, 129, 75)) ;
+         
+        }
+         .navbar a{
+    text-align: left;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 40px;
+    color: #3e8031;
+ }
+ .navbar a:hover{color:#3e8031;
+    border: 3px #3e8031 solid; 
+    padding: 10px;
+    width: 10px;
+    height: 10px; 
+    border-radius: 20px; 
+}
+ /* ازرار الادخال */
+ input{
+    margin:30px ;
+        margin-left: 70px;
+        border-radius: 25px;
+        padding: 30px;
+        height: 30px;
+        width: 90%;
+        font-size: 32px;
+        text-decoration: none;
+        text-align: ltr;
+        background-color:white;
+    
+    }
+    #subject{
+        margin: 30px;
+        margin-left: 70px;
+        border-radius: 25px;
+        padding: 30px;
+        height: 300px;
+        width: 90%;
+        font-size: 32px;
+        text-decoration: none;
+        text-align: ltr;
+        background-color:white;
+    }
+    
+    button{
+        color: rgb(7, 7, 7);
+        width: 400px;
+        height: 70px;
+        direction: ltr;
+        border-radius: 50px;
+        margin-left:40% ;
+        font-size: 32px;
+        background-color: #3e8031;
+        
+    }
+    h1{ margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+
+}
+#successMessage {
+        display: none;
+        color: green;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+      }
+/*  الاستجابة للتابلت (عرض الشاشة أقل من 768 بكسل) */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 25px; 
+    margin: 20px; 
+  }
+
+  h1 {
+    font-size: 30px; 
+    margin-top: 50px; 
+  }
+
+  input, .subject {
+    width: 70%; 
+    margin-left: 10%; 
+    font-size: 24px; 
+    padding: 20px; 
+  }
+
+  button {
+    width: 60%; 
+    margin-left: 20%; 
+    font-size: 24px; 
+    height: 60px; 
+  }
+}
+
+/*  الاستجابة للهواتف (عرض الشاشة أقل من 480 بكسل) */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 18px; 
+    margin: 10px; 
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 30px; 
+  }
+
+  input, .subject {
+    width: 75%; 
+    margin-left: 5%; 
+    font-size: 18px; 
+    padding: 15px;
+  }
+
+  button {
+    width: 80%; 
+    margin-left: 10%; 
+    font-size: 18px; 
+    height: 50px; 
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact</a>
+          <a href="log in.html">log in</a>
+         </nav> 
+         </div>   
+    
+   
+    
+    <h1>الاقتراحات والشكاوي</h1>
+    <div class="border">
+      <form id="complaintForm">
+        <div>
+          <input type="text" placeholder="Full name"  id="text" />
+        </div>
+        <div>
+          <input type="email" placeholder="Email Address"  id="email" />
+        </div>
+        <div>
+          <textarea
+            name="Subject"
+            maxlength="500"
+            placeholder="Subject.....!"
+            class="subject"
+            id="subject"
+          ></textarea>
+        </div>
+        <button type="submit">SEND</button>
+      </form>
+      <p id="successMessage">تم إرسال رسالتك بنجاح!</p>
+    </div>
+   
+    <script>
+      document.getElementById("complaintForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // منع إعادة تحميل الصفحة
+
+        // الحصول على القيم من الحقول
+        const name = document.getElementById("text").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const successMessage = document.getElementById("successMessage");
+
+        // التحقق من تعبئة الحقول
+        if (!name) {
+          alert("يرجى إدخال الاسم.");
+          return;
+        }
+        if (!email) {
+          alert("يرجى إدخال البريد الإلكتروني.");
+          return;
+        }
+        if (!subject) {
+          alert("يرجى إدخال الموضوع.");
+          return;
+        }
+
+        // إذا كانت جميع الحقول مملوءة، عرض رسالة النجاح
+        successMessage.style.display = "block";
+        
+        // تفريغ الحقول
+        document.getElementById("text").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+      
+    });
+
+    </script>
+</body>
+</html>

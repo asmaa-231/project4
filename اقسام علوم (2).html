@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختيار القسم</title>
+    <style>
+    .navbar a{
+    text-align: left;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 40px;
+    color: #3e8031; 
+ }
+ .navbar a:hover{color:#3e8031; 
+    border: 3px #3e8031 solid; 
+    padding: 10px;
+    width: 10px;
+    height: 10px; 
+    border-radius: 20px; 
+}
+body{
+    background-color: white;
+}
+   
+        /* إعدادات عامة للصفحة */
+        div{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            background-color: white; 
+            color: #3e8031;  
+        }
+
+        /* العنوان الرئيسي */
+        h1 {
+            margin-top: 5%;
+            color: #3e8031; 
+            font-size: 2.5em;
+           
+            text-align: center;
+        }
+
+        /* حاوية الأزرار */
+        .buttons {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px; 
+        }
+
+        /* تصميم الأزرار */
+        .btnn {
+            background: transparent;
+            color: #3e8031;  
+            border: 4px solid #3e8031; 
+            padding: 15px 25px;
+            font-size: 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            
+            width: 500px; 
+            height: 60px;
+            transition: all 0.3s ease; 
+        }
+
+        /* تأثير عند تمرير الماوس على الأزرار */
+        .btnn:hover {
+            background: #3e8031;  
+            color: #000; 
+            transform: scale(1.05); 
+            box-shadow: 0 8px 15px #3e8031;  
+        }
+
+        /* حركة الأزرار عند التحميل */
+        .btnn {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 0.7s ease-out forwards;
+            
+        }
+
+        /* تأخير حركة كل زر */
+        .btnn:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .btnn:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .btnn:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .btnn:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        .btnn:nth-child(5) {
+            animation-delay: 1s;
+        }
+        .btnn:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+        .btnn:nth-child(7) {
+            animation-delay: 1.5s;
+        }
+
+        /* حركة الأزرار */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="log in.html">log in</a>
+       </nav> 
+    <!-- عنوان الصفحة -->
+    <h1>اختر القسم</h1>
+
+    <!-- أزرار الأقسام -->
+    <div class="buttons">
+        <a href="/فاطمهit/index.html" class="btnn">قسم المعلوماتية الصحية</a>
+        <a href="/ايه عزت/index.html" class="btnn">قسم تركيبات اسنان</a>
+        <a href="/فاطمه/index.html" class="btnn">قسم الرعاية الصحية</a>
+        <a href="/ايه رضا/index.html" class="btnn">قسم التصنيع الدوائى</a>
+        <a href="/راضى/راضى.html" class="btnn" >الانشطة والندوات</a>
+        <a href="/ندى حرم جامعى/index.html" class="btnn">الحرم الجامعي</a>
+    </div>
+</body>
+</html>

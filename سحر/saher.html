@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم تكنولوجيا المعلومات</title>
+    <style>
+      /* إعدادات الصفحة */
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #fdfbfb;
+        color: black;
+        line-height: 1.6;
+      }
+
+        /* الصورة والعنوان */
+        .hero {
+            
+            width: 100%;
+            height: 100vmin;
+            background: url(it4.jpg) no-repeat center center / cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out; 
+        }
+
+        /* أنيميشن */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+          /* شريط التنقل */
+      .navbar {
+        background-image: linear-gradient(
+          to left,
+          rgb(31, 30, 30),
+          #4e4b4b,
+          rgb(160, 157, 157),
+          #888785,
+          #888785,
+          #272726
+        );
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: rgb(26, 27, 27);
+      }
+
+       
+      /* الأقسام */
+      .section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: justify;
+        background: #838282;
+        border: 1px solid #8d8888;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+
+       /* العناوين */
+       .section h2 {
+        text-align: center;
+        color: #050505;
+        margin-bottom: 20px;
+        font-size: 29px;
+      }
+      p {
+        font-size: 26px;
+      }
+      .section ul {
+        font-size: 23px;
+      }
+
+        /* الفوتر */
+        footer {
+            background: #333;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>قسم تكنولوجيا المعلومات</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">عن القسم</a></li>
+            <li><a href="#fields">مجالات الدراسة</a></li>
+            <li><a href="#work">فرص العمل</a></li>
+            <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
+            <li><a href="#exhibition">عن المعرض</a></li>
+        </ul>
+    </nav>
+
+    <!-- عن القسم -->
+    <section id="about" class="section">
+        <h2>عن القسم</h2>
+        <p>يعد قسم تكنولوجيا المعلومات من الأقسام الحيوية التي تواكب التطورات السريعة في مجال التكنولوجيا والابتكار. يهدف القسم إلى تزويد الطلاب بالمعرفة والمهارات اللازمة لفهم وتحليل وتطبيق حلول تكنولوجية متقدمة في مختلف المجالات، مثل البرمجة، الشبكات، قواعد البيانات، الأمن السيبراني، والذكاء الاصطناعي.</p>
+    </section>
+
+    <section id="fields" class="section">
+        <h2>مجالات الدراسة</h2>
+        <ul>
+            <li>برمجة وتطوير البرمجيات</li>
+            <li>الشبكات وأمن المعلومات</li>
+            <li>تحليل البيانات والذكاء الاصطناعي</li>
+            <li>إدارة الأنظمة والمشاريع</li>
+            <li>تطوير تطبيقات الويب والجوال</li>
+            <li>إدارة قواعد البيانات</li>
+        </ul>
+    </section>
+
+    <!-- فرص العمل -->
+    <section id="work" class="section">
+        <h2>فرص العمل</h2>
+        <ul>
+            <li>مهندس برمجيات</li>
+            <li>محلل نظم معلومات</li>
+            <li>مدير قواعد بيانات</li>
+            <li>أخصائي تكنولوجيا المعلومات</li>
+            <li>مصمم أمن المعلومات</li>
+        </ul>
+    </section>
+
+    <!-- أعضاء هيئة التدريس -->
+    <section id="faculty" class="section">
+        <h2>أعضاء هيئة التدريس</h2>
+        <ul>
+            <li>الدكتور أشرف عبد العزيز</li>
+            <li>الدكتور أسامة النحاس</li>
+            <li>الدكتورة نهالي الأزللي</li>
+            <li>الدكتورة إيمان شوقي</li>
+            <li>الدكتور محمد الشاذلي</li>
+        </ul>
+    </section>
+
+    <!-- عن المعرض -->
+    <section id="exhibition" class="section">
+        <h2>عن المعرض</h2>
+        <p>يهدف المعرض إلى تسليط الضوء على الابتكارات في مجالات مثل الذكاء الاصطناعي، إنترنت الأشياء، الحوسبة السحابية، الأمن السيبراني، وتطوير البرمجيات. كما يُعتبر منصة للتواصل بين رواد الأعمال والمستثمرين.</p>
+        <ul>
+            <li>ورش عمل وندوات</li>
+            <li>عرض أحدث التقنيات والابتكارات</li>
+            <li>فرصة للتفاعل مع الخبراء</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 جامعة برج العرب التكنولوجية</p>
+    </footer>
+</body>
+</html>

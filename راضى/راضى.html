@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض صور الجامعة</title>
+    
+ <style>
+  /* النصوص والصور */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  background-color: white; 
+  color: black;
+  text-align: center; 
+  font-family: Arial, sans-serif;
+}
+
+/* النص الرئيسي */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; 
+  color: black;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); 
+}
+h2{
+  font-size: 40px;
+}
+
+/* الصور */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.image-grid img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  border: 2px solid black; 
+  border-radius: 10px;
+ 
+}
+
+.image-grid img:hover {
+  transform: scale(1.1); 
+  border-color: #fff; 
+  cursor: pointer;
+}
+
+/* ريسبونسيف */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  .image-grid img {
+    height: 260px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-grid img {
+    height: 220px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-grid img {
+    height: 200px; 
+  }
+}
+ </style>
+    
+</head>
+<body>
+   
+<header>
+  <div>
+    <h1>معرض صور جامعه برج العرب التكنولوجيه</h1>
+  </div>
+</header>
+    <!-- معرض الصور -->
+    <section class="gallery-container">
+        <!-- الندوات -->
+        <div class="gallery-section" id="seminars">
+            <h2>الندوات</h2>
+            <div class="image-grid">
+                <img src="ريس1.jpg" alt="صوره">
+                <img src="ريس2.jpg" alt="صوره">
+                <img src="ريس3.jpg" alt="صوره">              
+                <img src="ندوه23.jpg" alt="صوره">
+                <img src="ريس6.jpg" alt="صوره">
+                <img src="ندوه22.jpg" alt="صوره">
+                <img src="ندوه21.jpg" alt="صوره">
+                <img src="ندوه20.jpg" alt="صوره">
+                <img src="ندوه16.jpg" alt="صوره">
+                <img src="ندوه3.jpg" alt="صوره">
+                <img src="ندوه.jpg" alt="صوره">
+                <img src="ندوه40.jpg" alt="صوره"> 
+            
+
+</div>
+<hr>
+        <!--الأنشطة الرياضية -->
+        <div class="gallery-section" id="sports">
+            <h2>الأنشطة الرياضية</h2>
+            <div class="image-grid">
+                <img src="رياضه21.jpg" alt="رياضة 1">
+                <img src="رياضه20.jpg" alt="رياضة 2">
+                <img src="رياضه18.jpg" alt="رياضة 3">
+                <img src="رياضه17.jpg" alt="رياضة 4">
+                <img src="رياضه15.jpg" alt="رياضة 5">
+                <img src="رياضه14.jpg" alt="رياضة 6">
+                <img src="رياضه12.jpg" alt="رياضة 7">
+                <img src="رياضه19.jpg" alt="رياضة 8">
+                <img src="رياضه10.jpg" alt="رياضة9">
+                <img src="رياضه9.jpg" alt="رياضة 17">
+                <img src="رياضه6.jpg" alt="رياضة 18">
+                <img src="رياضه4.jpg" alt="رياضة 19">
+           
+               
+            </div>
+        </div>
+        <hr>
+
+        <!-- الأنشطة الفنية -->
+        <div class="gallery-section" id="art">
+            <h2>الأنشطة الفنية</h2>
+            <div class="image-grid">
+              <img src="فنى2.jpg" alt="فني 1">
+              <img src="فنى4.jpg" alt="فني 2"> 
+              <img src="فنى5.jpg" alt="فني 3">
+              <img src="فنى7.jpg" alt="فني 4"> 
+              <img src="فنى11.jpg" alt="فني 5">
+              <img src="فنى12.jpg" alt="فني 6">
+              <img src="فنى14.jpg" alt="فني10">
+              <img src="فنى17.jpg" alt="فني 11">
+              <img src="فنى19.jpg" alt="فني 12">
+              <img src="فنى22.jpg" alt="فني 15">
+               <img src="فنى9.jpg" alt="فني 16">
+              <img src="فنى13.jpg" alt="فني 17"> 
+            
+                
+                
+                
+            </div>
+        </div>
+<hr>
+        <!-- مرافق الجامعة -->
+        <div class="gallery-section" id="facilities">
+            <h2>مرافق الجامعة</h2>
+            <div class="image-grid">
+            
+              <img src="مرفق30.jpg" alt="مرفق 1">
+              <img src="مرفق29.jpg" alt="مرفق 3">
+              <img src="مرفق27.jpg" alt="مرفق 4">
+              <img src="مرفق20.jpg" alt="مرفق 5">
+              <img src="مرفق19.jpg" alt="مرفق 6">
+                     <img src="مرفق12.jpg" alt="مرفق 13">
+                     <img src="مرفق10.jpg" alt="مرفق 14">
+                     <img src="مرفق9.jpg" alt="مرفق 15">
+                     <img src="مرفق26.jpg" alt="مرفق 16">
+                     <img src="مرفق24.jpg" alt="مرفق 17">
+                     <img src="مرفق22.jpg" alt="مرفق 18">
+                     <img src="مرفق21.jpg" alt="مرفق 29">
+              
+
+                   
+                <hr>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>جميع الحقوق محفوظة لجامعة برج العرب التكنولوجية</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

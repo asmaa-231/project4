@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة برج العرب التكنولوجية</title>
+   
+    <style>
+        /* كل الصفحه*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf8f8;
+            color: #ffffff;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* العناوين الرئيسية */
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin: 20px 0;
+            color: #0a0a0a; 
+        }
+        h3{
+            color: #0c0c0c;
+            font-size: 36px; 
+        }
+        /* الفقرات */
+        p {
+            text-align: center;
+            margin: 10px auto;
+            max-width: 800px;
+            
+        }
+
+      /* المبنى */
+        .campus-buildings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .building {
+            position: relative;
+            flex-basis: 30%;
+            max-width: 300px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .building-image {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #6F6F6F;
+            transition: transform 0.3s;
+        }
+
+        .building-image:hover {
+            transform: scale(1.05);
+        }
+
+        .building h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .building p {
+            background-color: rgba(38, 37, 37, 0.7);
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 2px solid #8f8888;
+            font-size: 20px;
+            height: 90px;
+        }
+
+        /* الموقع */
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        /* فوتر */
+        footer {
+            background-color: #191a1b;
+            color: #EDF2F7;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* التصميم */
+        @media (max-width: 768px) {
+            .building {
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .building {
+                flex-basis: 100%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <!-- العنوان الصفحه -->
+    <section id="home">
+        <h1>جامعة برج العرب التكنولوجية</h1>
+        <p>جامعة برج العرب التكنولوجية هي جامعة رائدة تهدف إلى تقديم التعليم التقني المتقدم للطلاب...</p>
+    </section>
+    <!-- المبنى -->
+    <section id="campus">
+        <h1>الحرم الجامعي</h1>
+        <p>الحرم الجامعي لجامعة برج العرب...</p>
+        <div class="campus-buildings">
+           
+            <div class="building">
+                <img src="التعليمى2.jpg" alt="مبنى التعليمي" class="building-image">
+                <h3>مبنى التعليمي</h3>
+                <p>يتكون من المبنى التعليمي لجامعه برج العرب التكنولوجيه من اربع مدرجات للمحاضرات ومجموعه من القاعات التدريسيه ومكتبه ومعامل IOT
+                </p>
+            </div>
+            <div class="building">
+                <img src="الورش3.jpg" alt="مبنى الورش" class="building-image">
+               <h3>مبنى الورش والمعامل</h3>
+                <p>يتكون مبنى المعامل والورش لجامعه برج العرب التكنولوجيه من مجموعه من الورش المجهزه واللابات والمعامل  </p>
+            </div>
+            <div class="building">
+                <img src="اداره3.jpg" alt="مبنى الإدارة" class="building-image">
+                <h3>مبنى الإدارة</h3>
+                <p>مبنى الإدارة يضم جميع المكاتب الإدارية...</p>
+            </div>
+            <div class="building">
+                <img src="المسرح2.jpg" alt="المسرح" class="building-image">
+                <h3>المسرح</h3>
+                <p>المسرح مجهز لاستقبال الفعاليات الثقافية والفنية...</p>
+            </div>
+            <div class="building">
+                <img src="المسجد1.jpg" alt="المسجد" class="building-image">
+                <h3>المسجد</h3>
+                <p>المسجد يقدم خدماته لجميع الطلاب والعاملين...</p>
+            </div>
+            <div class="building">
+                <img src="الملعب2.jpg" alt="الملعب" class="building-image">
+                <h3>الملعب</h3>
+                <p>الملعب مصمم لاستضافة الأنشطة الرياضية المختلفة...</p>
+            </div>
+            <div class="building">
+                <img src="كافتيريا1.jpg" alt="الكافتيريا" class="building-image">
+                <h3>الكافتيريا</h3>
+                <p>الكافتيريا هي مكان مريح يقدم الوجبات الخفيفة...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- خريطة -->
+    <section id="location">
+        <h1>الموقع الجغرافي لجامعة برج العرب التكنولوجية</h1>
+       <p>تقع جامعة برج العرب التكنولوجية في قلب مدينة برج العرب الجديدة بمحافظة الإسكندرية، وهي منطقة تتميز بالهدوء والتنظيم والبنية التحتية الحديثة. يتميز موقع الجامعة بقربه من المناطق الصناعية الكبرى، مما يوفر للطلاب فرصًا للتدريب العملي والتفاعل مع سوق العمل بشكل مباشر. بالإضافة إلى ذلك، يسهل الوصول إلى الجامعة عبر شبكات الطرق والمواصلات العامة، مما يجعلها وجهة مثالية للطلاب من مختلف المحافظات. يقدم موقع الجامعة بيئة تعليمية متكاملة تجمع بين الهدوء والتقنيات الحديثة لدعم تجربة تعليمية متميزة.
+    </p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK_HERE" 
+                allowfullscreen loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة لجامعة برج العرب التكنولوجية</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم تكنولوجيا تركيبات الأسنان</title>
+    <style>
+         /* إعدادات الصفحة */
+         body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #fdfbfb;
+        color: black;
+        line-height: 1.6;
+      }
+        /* قسم الصورة والعنوان */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100cqmin;
+            background: url('اسنان.jpg') no-repeat center center / cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out; 
+        }
+
+        /* أنيميشن */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      /* شريط التنقل */
+      .navbar {
+        background-image: linear-gradient(
+          to left,
+          rgb(31, 30, 30),
+          #4e4b4b,
+          rgb(160, 157, 157),
+          #888785,
+          #888785,
+          #272726
+        );
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: rgb(26, 27, 27);
+      }
+
+      /* الأقسام */
+      .section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: justify;
+        background: #838282;
+        border: 1px solid #8d8888;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* العناوين */
+      .section h2 {
+        text-align: center;
+        color: #050505;
+        margin-bottom: 20px;
+        font-size: 29px;
+      }
+      p {
+        font-size: 26px;
+      }
+      .section ul {
+        font-size: 23px;
+      }
+
+        /* الفوتر */
+        footer {
+            background: #333;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .navbar ul {
+          flex-direction: row;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>قسم تكنولوجيا تركيبات الأسنان</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">نبذة عن القسم</a></li>
+            <li><a href="#fields">فرص العمل</a></li>
+            <li><a href="#titles">المسميات الوظيفية</a></li>
+            <li><a href="#advantages">مميزات القسم</a></li>
+            <li><a href="#faculty">أعضاء هيئة التدريس</a></li>
+            <li><a href="#plan">الخطة الدراسية</a></li>
+        </ul>
+    </nav>
+    <!-- نبذة عن القسم -->
+    <section id="about" class="section">
+        <h2>نبذة عن القسم</h2>
+        <p>
+            - إعداد فنيين معمل أسنان مؤهلين للعمل داخل معامل ترکیبات وتعویضات الأسنان بدقة واحترافية.<br>
+            - إعداد مساعدي طبيب أسنان مؤهلين للعمل تحت قيادة طبيب الأسنان داخل العيادات والمراكز الطبية.
+        </p>
+    </section>
+
+    <!-- فرص العمل -->
+    <section id="fields" class="section">
+        <h2>فرص العمل</h2>
+        <ul>
+            <li>معامل الأسنان بالمستشفيات.</li>
+            <li>عيادات طب الأسنان في القطاع العام.</li>
+            <li>معامل الأسنان الخاصة بالمؤسسات التعليمية مثل كليات طب الأسنان.</li>
+            <li>العمل بمعامل الأسنان الخاصة بالمؤسسات البحثية الخاصة بطب الأسنان.</li>
+            <li>الشركات والمصانع التي تصنع المواد التعويضية للأسنان.</li>
+            <li>وزارة الصحة بمراكز الرعاية الصحية الأولية ووحدات طب الأسرة.</li>
+            <li>المراكز المتخصصة بجراحة الفم.</li>
+        </ul>
+    </section>
+
+    <!-- المسميات الوظيفية -->
+    <section id="titles" class="section">
+        <h2>المسميات الوظيفية</h2>
+        <ul>
+            <li>فني تركيبات أسنان.</li>
+            <li>أخصائي تركيبات أسنان.</li>
+            <li>تقني أسنان (Dental Technologist).</li>
+            <li>مدير مختبر أسنان (Dental Lab Manager).</li>
+            <li>فني تصنيع أجهزة تقويم الأسنان.</li>
+            <li>مدرب أو محاضر أكاديمي.</li>
+        </ul>
+    </section>
+
+    <!-- مميزات القسم -->
+    <section id="advantages" class="section">
+        <h2>مميزات القسم</h2>
+        <ul>
+            <li>فرص عمل متنوعة.</li>
+            <li>المهارات التقنية المتقدمة.</li>
+            <li>له دور مهم في الرعاية الصحية.</li>
+            <li>الابتكار والإبداع.</li>
+            <li>التطور المهني المستمر.</li>
+            <li>الطلب المستمر في سوق العمل.</li>
+            <li>التفاعل مع الفرق الطبية.</li>
+        </ul>
+    </section>
+
+    <!-- أعضاء هيئة التدريس -->
+    <section id="faculty" class="section">
+        <h2>أعضاء هيئة التدريس</h2>
+        <p>رئيس القسم: دكتور وليد العمروسي</p>
+        <ul>
+            <li>دكتور محمد صلاح.</li>
+            <li>دكتور وليد.</li>
+            <li>دكتور حسام.</li>
+            <li>دكتور مؤمن.</li>
+            <li>دكتور نهال.</li>
+        </ul>
+    </section>
+
+    <!-- الخطة الدراسية -->
+    <section id="plan" class="section">
+        <h2>الخطة الدراسية</h2>
+        <h3>الفرقة الأولى</h3>
+        <p>Anatomy, Physiological, Chemistry, Professionalism, Safety, Math</p>
+        <h3>الفرقة الثانية</h3>
+        <p>Fixed, Removable, Radiology, Occlusion, قضايا</p>
+        <h3>الفرقة الثالثة</h3>
+        <p>Orthodontics, Maxillofacial, Advanced dental anatomy, Lab management</p>
+        <h3>الفرقة الرابعة</h3>
+        <p>مشروع التخرج والتدريب العملي</p>
+    </section>
+
+    <footer>
+        <p>© 2024 جامعة برج العرب التكنولوجية</p>
+    </footer>
+</body>
+</html>
